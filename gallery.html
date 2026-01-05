@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>影像 | 恆春風土所</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif+TC:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .gallery-grid {
+            column-count: 1;
+            column-gap: 1rem;
+        }
+
+        @media (min-width: 600px) {
+            .gallery-grid {
+                column-count: 2;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .gallery-grid {
+                column-count: 3;
+            }
+        }
+
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 1rem;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="/assets/windlandlabs.png" alt="Logo">
+                恆春風土所
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="space.html">空間</a></li>
+                <li><a href="menu.html">餐飲</a></li>
+                <li><a href="events.html">活動</a></li>
+                <li><a href="gallery.html">影像</a></li>
+                <li><a href="contact.html">聯絡</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" style="padding: 4rem 1rem;">
+        <h2 style="color: var(--color-primary); margin-bottom: 2rem; text-align: center;">影像紀錄</h2>
+        <div class="gallery-grid" id="gallery-container">
+            <!-- Images will be injected here or hardcoded -->
+            <div class="gallery-item"><img src="/assets/照片/外觀照/114A10開店空間 - 建築外觀含隔壁建築1.png"></div>
+            <div class="gallery-item"><img src="/assets/照片/外觀照/114A10開店空間 - 建築外觀（室外）1.png"></div>
+            <div class="gallery-item"><img src="/assets/照片/外觀照/114A10開店空間(室內） - 天井空間1.png"></div>
+            <div class="gallery-item"><img src="/assets/照片/外觀照/114A10開店空間(室內） - 由門口往內拍2.png"></div>
+            <div class="gallery-item"><img src="/assets/照片/外觀照/114A10開店空間（室內） - 由室內往門口拍1.png"></div>
+            <div class="gallery-item"><img src="/assets/CS5風土所海報.jpg"></div>
+            <div class="gallery-item"><img src="/assets/文宣/風雨漸歇.png"></div>
+            <div class="gallery-item"><img src="/assets/文宣/S__56811535.jpg"></div>
+            <div class="gallery-item"><img src="/assets/風土所概念/1-02.jpg"></div>
+            <div class="gallery-item"><img src="/assets/風土所概念/20200060072_P001.jpg"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 恆春風土所. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
