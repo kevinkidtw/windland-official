@@ -1,5 +1,18 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
 
 export default defineConfig({
     base: '/windland-official/', // Base URL for GitHub Pages repository
+    build: {
+        rollupOptions: {
+            input: {
+                main: resolve(__dirname, 'index.html'),
+                space: resolve(__dirname, 'space.html'),
+                menu: resolve(__dirname, 'menu.html'),
+                events: resolve(__dirname, 'events.html'),
+                gallery: resolve(__dirname, 'gallery.html'),
+                contact: resolve(__dirname, 'contact.html'),
+            },
+        },
+    },
 })
